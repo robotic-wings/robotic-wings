@@ -1,0 +1,55 @@
+{
+  "category": "container",
+  "loading": {
+    "type": "Spinner",
+    "properties": {
+      "height": "100vh"
+    }
+  },
+  "schema": {
+    "properties": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "icon": {
+          "type": [
+            "string",
+            "object"
+          ],
+          "description": "Name of an Ant Design Icon or properties of an Icon block to customize icon to use as result image.",
+          "docs": {
+            "displayType": "icon"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "success",
+            "error",
+            "info",
+            "warning",
+            "404",
+            "403",
+            "500"
+          ],
+          "default": "info",
+          "description": "Status of the result. Determines image and color."
+        },
+        "subTitle": {
+          "type": "string",
+          "description": "Result subtitle or secondary text - supports html."
+        },
+        "title": {
+          "type": "string",
+          "description": "Result title or primary text - supports html."
+        }
+      }
+    }
+  },
+  "moduleFederation": {
+    "module": "Result",
+    "scope": "_at_lowdefy_slash_blocks_dash_antd",
+    "version": "3.23.3",
+    "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+  }
+}

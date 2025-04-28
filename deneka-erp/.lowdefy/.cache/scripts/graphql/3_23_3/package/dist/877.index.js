@@ -1,0 +1,1 @@
+exports.id=877,exports.ids=[877],exports.modules={72877:(e,s,t)=>{"use strict";t.r(s),t.d(s,{typeDefs:()=>r.typeDefs,resolvers:()=>r.resolvers,createContext:()=>r.createContext});var r=t(67983)}};

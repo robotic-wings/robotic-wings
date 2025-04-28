@@ -1,0 +1,97 @@
+{
+  "id": "page:404",
+  "type": "Context",
+  "style": {
+    "minHeight": "100vh"
+  },
+  "auth": {
+    "public": true
+  },
+  "pageId": "404",
+  "blockId": "404",
+  "meta": {
+    "category": "context",
+    "loading": false,
+    "moduleFederation": {
+      "module": "Context",
+      "scope": "_at_lowdefy_slash_blocks_dash_basic",
+      "version": "3.23.3",
+      "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-basic/remoteEntry.js"
+    }
+  },
+  "requests": [],
+  "areas": {
+    "content": {
+      "blocks": [
+        {
+          "id": "block:404:404_result",
+          "type": "Result",
+          "properties": {
+            "status": 404,
+            "title": "404",
+            "subTitle": "Sorry, the page you are visiting does not exist."
+          },
+          "areas": {
+            "extra": {
+              "blocks": [
+                {
+                  "id": "block:404:home",
+                  "type": "Button",
+                  "properties": {
+                    "title": "Go to home page",
+                    "type": "Link",
+                    "icon": "HomeOutlined"
+                  },
+                  "events": {
+                    "onClick": {
+                      "try": [
+                        {
+                          "id": "home",
+                          "type": "Link",
+                          "params": {
+                            "home": true
+                          }
+                        }
+                      ],
+                      "catch": []
+                    }
+                  },
+                  "blockId": "home",
+                  "meta": {
+                    "category": "display",
+                    "loading": {
+                      "type": "SkeletonButton"
+                    },
+                    "moduleFederation": {
+                      "module": "Button",
+                      "scope": "_at_lowdefy_slash_blocks_dash_antd",
+                      "version": "3.23.3",
+                      "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "blockId": "404_result",
+          "meta": {
+            "category": "container",
+            "loading": {
+              "type": "Spinner",
+              "properties": {
+                "height": "100vh"
+              }
+            },
+            "moduleFederation": {
+              "module": "Result",
+              "scope": "_at_lowdefy_slash_blocks_dash_antd",
+              "version": "3.23.3",
+              "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "operators": []
+}

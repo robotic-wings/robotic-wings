@@ -1,0 +1,136 @@
+{
+  "id": "page:welcome",
+  "type": "PageHeaderMenu",
+  "properties": {
+    "title": "Welcome"
+  },
+  "areas": {
+    "content": {
+      "justify": "center",
+      "blocks": [
+        {
+          "id": "block:welcome:content_card",
+          "type": "Card",
+          "style": {
+            "maxWidth": 800
+          },
+          "blockId": "content_card",
+          "meta": {
+            "category": "container",
+            "loading": {
+              "type": "Skeleton",
+              "properties": {
+                "height": 80
+              }
+            },
+            "moduleFederation": {
+              "module": "Card",
+              "scope": "_at_lowdefy_slash_blocks_dash_antd",
+              "version": "3.23.3",
+              "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+            }
+          },
+          "areas": {
+            "content": {
+              "blocks": [
+                {
+                  "id": "block:welcome:content",
+                  "type": "Result",
+                  "properties": {
+                    "title": "Welcome to your Lowdefy app",
+                    "subTitle": "We are excited to see what you are going to build",
+                    "icon": {
+                      "name": "HeartTwoTone",
+                      "color": "#f00"
+                    }
+                  },
+                  "areas": {
+                    "extra": {
+                      "blocks": [
+                        {
+                          "id": "block:welcome:docs_button",
+                          "type": "Button",
+                          "properties": {
+                            "size": "large",
+                            "title": "Let's build something",
+                            "color": "#1890ff"
+                          },
+                          "events": {
+                            "onClick": {
+                              "try": [
+                                {
+                                  "id": "link_to_docs",
+                                  "type": "Link",
+                                  "params": {
+                                    "url": "https://docs.lowdefy.com",
+                                    "newWindow": true
+                                  }
+                                }
+                              ],
+                              "catch": []
+                            }
+                          },
+                          "blockId": "docs_button",
+                          "meta": {
+                            "category": "display",
+                            "loading": {
+                              "type": "SkeletonButton"
+                            },
+                            "moduleFederation": {
+                              "module": "Button",
+                              "scope": "_at_lowdefy_slash_blocks_dash_antd",
+                              "version": "3.23.3",
+                              "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "blockId": "content",
+                  "meta": {
+                    "category": "container",
+                    "loading": {
+                      "type": "Spinner",
+                      "properties": {
+                        "height": "100vh"
+                      }
+                    },
+                    "moduleFederation": {
+                      "module": "Result",
+                      "scope": "_at_lowdefy_slash_blocks_dash_antd",
+                      "version": "3.23.3",
+                      "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "auth": {
+    "public": true
+  },
+  "pageId": "welcome",
+  "blockId": "welcome",
+  "meta": {
+    "category": "context",
+    "loading": {
+      "type": "Spinner",
+      "properties": {
+        "height": "100vh"
+      }
+    },
+    "moduleFederation": {
+      "module": "PageHeaderMenu",
+      "scope": "_at_lowdefy_slash_blocks_dash_antd",
+      "version": "3.23.3",
+      "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-antd/remoteEntry.js"
+    }
+  },
+  "requests": [],
+  "operators": []
+}

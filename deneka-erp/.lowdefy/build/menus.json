@@ -1,0 +1,17 @@
+[
+  {
+    "id": "menu:default",
+    "links": [
+      {
+        "id": "menuitem:default:0",
+        "type": "MenuLink",
+        "pageId": "welcome",
+        "auth": {
+          "public": true
+        },
+        "menuItemId": "0"
+      }
+    ],
+    "menuId": "default"
+  }
+]

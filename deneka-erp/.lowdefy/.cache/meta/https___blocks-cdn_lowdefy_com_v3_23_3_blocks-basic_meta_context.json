@@ -1,0 +1,55 @@
+{
+  "category": "context",
+  "loading": false,
+  "schema": {
+    "properties": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "content": {
+          "type": "string",
+          "description": "Context content string, alternatively provide and list of blocks as Context content."
+        },
+        "style": {
+          "type": "object",
+          "description": "Css style object to apply to Context div.",
+          "docs": {
+            "displayType": "yaml"
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "onClick": {
+          "type": "array",
+          "description": "Trigger actions when the Context is clicked."
+        },
+        "onEnter": {
+          "type": "array",
+          "description": "Trigger actions every time a context is mounted and keep the page in loading until all actions have finished."
+        },
+        "onEnterAsync": {
+          "type": "array",
+          "description": "Trigger actions every time a context is mounted and do not keep the page in loading."
+        },
+        "onInit": {
+          "type": "array",
+          "description": "Trigger actions the first time a context is mounted and keep the page in loading until all actions have finished."
+        },
+        "onInitAsync": {
+          "type": "array",
+          "description": "Trigger actions the first time a context is mounted and do not keep the page in loading."
+        }
+      }
+    }
+  },
+  "moduleFederation": {
+    "module": "Context",
+    "scope": "_at_lowdefy_slash_blocks_dash_basic",
+    "version": "3.23.3",
+    "remoteEntryUrl": "https://blocks-cdn.lowdefy.com/v3.23.3/blocks-basic/remoteEntry.js"
+  }
+}
